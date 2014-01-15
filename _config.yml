@@ -5,3 +5,4 @@ redcarpet:
 pygments: true
 lang: fi
 exclude: [cache,publish.sh,knitfiles.R]
+baseurl: /

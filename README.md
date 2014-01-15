@@ -19,11 +19,10 @@ Verkkosivustolla on monia muitakin etuja, joita johtopäätökset sivulla on dem
 
 1. Avaa pääte ja kloonaa repo Githubista komennolla: `git clone git@github.com:muuankarski/jekyll-report.git`
 2. `cd jekyll-report`
-3. lisää _config.yal tiedostoon rivi `baseurl: saittisi.url` ja lisää sama url myös tiedoston `knitfiles.R` `base.url="/"`kohtaan.
 3. Aja komento `R CMD BATCH knitfiles.R` ja R tekee analyysit ja generoi postit
-3. Aja komento `jekyll serve --watch --baseurl ''` ja jekyll luo sivuston paikallisesti
-4. avaa selaimessa osoite [localhost:4000](localhost:4000)
-5. Tuloksena projekti oletussisällöllä paikalisesti
+3. Aja komento `jekyll serve --watch --baseurl ''` ja jekyll luo sivuston paikallisesti hakemistoon `_site`
+4. avaa selaimessa osoite [localhost:4000](localhost:4000) ja selaimessa näkyy projekti oletussisällöllä
+3. Kun haluat julkaista projektin, niin korvaa `/` oman saittisi urlilla sekä _config.yal tiedoston `baseurl: /` että tiedoston `knitfiles.R` `base.url="/"`kohdissa.
 6. julkaise projekti
 
 Prosessi etenee siis siten, että **_R** hakemiston [RMarkdown](http://www.rstudio.com/ide/docs/r_markdown) muotoiset analyysidokkarit käännettään `knitfiles.R`-skriptin avulla ns. blogipostauksiksi .markdown-muotoon **_posts**-kansioon, josta jekyll generoi ne automaattisesti .html-muotoon ja luo valmiin sivuston sisältöineen ja rakenteineen.
