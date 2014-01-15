@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<!-- toc virittelyä
+<div id="toc">
+{{ page.content | fancytoc }}
+</div>
+-->
+
+<hr>
+
+<div id="posts">
+
+    {% for post in site.posts offset: 0 limit: 10 %}
+        <div style="border-bottom: 1px dashed gray; padding: 2px 5px;">
+        <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+        </div>
+    {% endfor %}
+</div>
+
+<hr>
+
+<h1 class="post-title">{{ page.title }}</h1>
+
+<div class="post">
+{{ content }}
+</div>
+
+</div>

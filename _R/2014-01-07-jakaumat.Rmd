@@ -1,0 +1,13 @@
+---
+title: Vastausjakaumatiedot
+layout: post
+---
+
+## Jakaumat
+
+```{r}
+library(ggplot2
+ggplot(df, aes(x=rating, fill=cond)) + geom_density(alpha=.3)
+```
+
+

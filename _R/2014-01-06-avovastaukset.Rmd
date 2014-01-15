@@ -1,0 +1,12 @@
+---
+title: Avovastaukset teemoittain
+layout: post
+---
+
+
+## Avovastauksia koordinaatistossa
+
+```{r}
+library(ggplot2
+qplot(Sepal.Length, Petal.Length, data = iris, color = Species)
+```

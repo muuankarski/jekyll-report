@@ -1,0 +1,13 @@
+---
+title: Johtopäätökset
+layout: post
+---
+
+
+
+## Autoplot
+
+```{r}
+data(cars)
+plot(cars)
+```

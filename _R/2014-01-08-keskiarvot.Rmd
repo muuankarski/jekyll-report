@@ -1,0 +1,15 @@
+---
+title: Keskiarvotietoja ja prosenttijakaumia teemoittain
+layout: post
+---
+
+
+## Jakaumat ja keskiarvot
+
+```{r}
+library(ggplot2
+# Density plots with means
+ggplot(df, aes(x=rating, colour=cond)) + geom_density() +
+    geom_vline(data=cdf, aes(xintercept=rating.mean,  colour=cond),
+               linetype="dashed", size=1)
+```

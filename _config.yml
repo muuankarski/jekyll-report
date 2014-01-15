@@ -1,0 +1,7 @@
+name: Analyysi- ja raportointiapplikaatio
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
+pygments: true
+lang: fi
+exclude: [cache,publish.sh,knitfiles.R]
