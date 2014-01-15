@@ -17,8 +17,8 @@ Verkkosivustolla on monia muitakin etuja, joita johtopäätökset sivulla on dem
 
 ## Uuden projektin perustaminen
 
-1. Avaa pääte ja kloonaa repo Githubista komennolla: `git clone keva-demo`
-2. `cd `
+1. Avaa pääte ja kloonaa repo Githubista komennolla: `git clone git@github.com:muuankarski/jekyll-report.git`
+2. `cd jekyll-report`
 3. lisää _config.yal tiedostoon rivi `baseurl: saittisi.url` ja lisää sama url myös tiedoston `knitfiles.R` `base.url="/"`kohtaan.
 3. Aja komento `R CMD BATCH knitfiles.R` ja R tekee analyysit ja generoi postit
 3. Aja komento `jekyll serve --watch --baseurl ''` ja jekyll luo sivuston paikallisesti

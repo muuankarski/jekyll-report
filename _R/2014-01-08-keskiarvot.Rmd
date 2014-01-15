@@ -7,7 +7,13 @@ layout: post
 ## Jakaumat ja keskiarvot
 
 ```{r}
-library(ggplot2
+set.seed(1234)
+df <- data.frame(cond = factor( rep(c("A","B"), each=200) ), 
+                   rating = c(rnorm(200),rnorm(200, mean=.8)))
+library(plyr)
+cdf <- ddply(df, "cond", summarise, rating.mean=mean(rating))
+
+library(ggplot2)
 # Density plots with means
 ggplot(df, aes(x=rating, colour=cond)) + geom_density() +
     geom_vline(data=cdf, aes(xintercept=rating.mean,  colour=cond),
