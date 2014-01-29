@@ -57,7 +57,7 @@ Uuden projektin perustaminen, analyysit ja julkaisu githubissa
 #### Lisää uudet tiedostot ja muutokset paikallisesti git-repoon
 
 1. lisää muutokset *staging area*lle **päätteessä** komennolla: `git add --all`
-2. lisää muutokset paikalliseen versionhallintaan **päätteessä** komennolla: `git commit -m "viesti tulee tähän"`
+2. lisää muutokset paikalliseen versionhallintaan **päätteessä** komennolla: `git commit -m "viesti tulee tahan"`
 
 #### Linkitä paikallinen projekti uuteen githubissa luomaasi projektiin
 
