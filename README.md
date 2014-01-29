@@ -42,13 +42,16 @@ Uuden projektin perustaminen, analyysit ja julkaisu githubissa
     2. linux/OS X: `jekyll serve --watch --baseurl ''`
 3. mene selaimella osoitteeseen `localhost:4000`
 4. tee muutoksia sivuille sekä analyysikoodiin tai muualle ja muutokset ilmestyvät selainta *päivittämällä*
-5. Lopulta analyysit ovat valmiit ja sivusto valmis julkaistavaksi
+5. Lopulta analyysit ovat valmiit ja sivusto valmis julkaistavaksi ja voit sulkea paikallisen sivuston päätteessä näppäinyhdistelmällä `Ctrl + c`
 
 ### Julkaise sivusto Githubissa
 
 1. luo uusi repository Githubissa esim. nimellä `uusiprojekti`. Sinulle luodaan uusi projekti jonka osoite on `https://github.com/kayttajatunnus/uusiprojekti`. **Tärkeää on muistaa että ko. projektin sivut näkyvät osoitteessa `https://kayttajatunnus.github.io/uusiprojekti`**
-2. Lisää sivujen url `"https://kayttajatunnus.github.io/uusiprojekti"`  sekä **_config.yal**-tiedoston `baseurl: ""` että **knitfiles.R**-tiedoston  `base.url=""` kohtiin.
-3. aja komennot `source("knitfiles.R")` R:ssä ja komento `jekyll build` päätteessä vielä toistamiseen
+2. Muokkaa kahta tiedostoa: `_config.yml` ja `knitfiles.R`
+    1. `_config.yml`: lisää sivujen url `"https://kayttajatunnus.github.io/uusiprojekti"` kohtaan `baseurl: ` (kaksoispisteen jälkeen)
+    2. `knitfiles.R`: lisää sivujen url `"https://kayttajatunnus.github.io/uusiprojekti"` kohtaan `base.url="/"`
+    3. **Huomaa jättää `/` url:n perään `knitfiles.R`-tiedostossa
+3. aja **R:ssä** komento `source("knitfiles.R")`  ja **päätteessä** komento `jekyll build` ja sivusto on valmis verkkoon
 
 #### Lisää uudet tiedostot ja muutokset paikallisesti git-repoon
 
