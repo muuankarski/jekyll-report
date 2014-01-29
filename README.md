@@ -36,11 +36,11 @@ Uuden projektin perustaminen, analyysit ja julkaisu githubissa
 
 ### Tee analyysit ja luo sivusto paikallisesti
 
-1. ajaa **R:ssä** komento `source("knitfiles.R")`
-2. Avaa **pääte** ja aja komento 
+1. Avaa **pääte** ja aja komento 
     1. windows: `jekyll serve --watch`
     2. linux/OS X: `jekyll serve --watch --baseurl ''`
-3. mene selaimella osoitteeseen `localhost:4000`
+2. mene selaimella osoitteeseen `localhost:4000`
+3. ajaa **R:ssä** komento `source("knitfiles.R")` ja päivitä selain - analyysit pitäisi ilmestyä saitille
 4. tee muutoksia sivuille sekä analyysikoodiin tai muualle ja muutokset ilmestyvät selainta *päivittämällä*
 5. Lopulta analyysit ovat valmiit ja sivusto valmis julkaistavaksi ja voit sulkea paikallisen sivuston **päätteessä** näppäinyhdistelmällä `Ctrl + c`
 
