@@ -36,38 +36,38 @@ Uuden projektin perustaminen, analyysit ja julkaisu githubissa
 
 ### Tee analyysit ja luo sivusto paikallisesti
 
-1. ajaa R:ssä komento `source("knitfiles.R")`
-2. Avaa pääte ja aja komento 
+1. ajaa **R:ssä** komento `source("knitfiles.R")`
+2. Avaa **pääte** ja aja komento 
     1. windows: `jekyll serve --watch`
     2. linux/OS X: `jekyll serve --watch --baseurl ''`
 3. mene selaimella osoitteeseen `localhost:4000`
 4. tee muutoksia sivuille sekä analyysikoodiin tai muualle ja muutokset ilmestyvät selainta *päivittämällä*
-5. Lopulta analyysit ovat valmiit ja sivusto valmis julkaistavaksi ja voit sulkea paikallisen sivuston päätteessä näppäinyhdistelmällä `Ctrl + c`
+5. Lopulta analyysit ovat valmiit ja sivusto valmis julkaistavaksi ja voit sulkea paikallisen sivuston **päätteessä** näppäinyhdistelmällä `Ctrl + c`
 
 ### Julkaise sivusto Githubissa
 
 1. luo uusi repository Githubissa esim. nimellä `uusiprojekti`. Sinulle luodaan uusi projekti jonka osoite on `https://github.com/kayttajatunnus/uusiprojekti`. **Tärkeää on muistaa että ko. projektin sivut näkyvät osoitteessa `https://kayttajatunnus.github.io/uusiprojekti`**
-2. Muokkaa kahta tiedostoa: `_config.yml` ja `knitfiles.R`
+2. Muokkaa kahta tiedostoa **RStudiossa**: `_config.yml` ja `knitfiles.R`
     1. `_config.yml`: lisää sivujen url `"https://kayttajatunnus.github.io/uusiprojekti"` kohtaan `baseurl: ` (kaksoispisteen jälkeen)
     2. `knitfiles.R`: lisää sivujen url `"https://kayttajatunnus.github.io/uusiprojekti"` kohtaan `base.url="/"`
-    3. **Huomaa jättää `/` url:n perään `knitfiles.R`-tiedostossa
-3. aja **R:ssä** komento `source("knitfiles.R")`  ja **päätteessä** komento `jekyll build` ja sivusto on valmis verkkoon
+    3. **Huomaa jättää `/` url:n perään `knitfiles.R`-tiedostossa**
+3. aja **R:ssä** komento `source("knitfiles.R")`  ja **päätteessä** komento: `jekyll build` ja sivusto on valmis verkkoon
 
 #### Lisää uudet tiedostot ja muutokset paikallisesti git-repoon
 
-1. lisää muutokset *staging area*lle komennolla `git add --all`
-2. lisää muutokset paikalliseen versionhallintaan `git commit -m "viesti tulee tähän"`
+1. lisää muutokset *staging area*lle **päätteessä** komennolla: `git add --all`
+2. lisää muutokset paikalliseen versionhallintaan **päätteessä** komennolla: `git commit -m "viesti tulee tähän"`
 
 #### Linkitä paikallinen projekti uuteen githubissa luomaasi projektiin
 
-4. Aseta projektille uusi remote-osoite päätteessä viittaamaan uuteen luomaasi github-repoon komennolla `git remote set-url origin git@github.com:kayttajatunnus/uusiprojekti.git`
-5. siirrä git-repo (versionhallinta) ensimmäistä kertaa uuteen github-repoon komennolla `git push -u origin master`
+4. Aseta projektille uusi remote-osoite päätteessä viittaamaan uuteen luomaasi github-repoon **päätteessä** komennolla: `git remote set-url origin git@github.com:kayttajatunnus/uusiprojekti.git`
+5. siirrä git-repo (versionhallinta) ensimmäistä kertaa uuteen github-repoon **päätteessä** komennolla: `git push -u origin master`
 
 #### Tee julkaistuun prjektiin gh-pages haara (branch) jotta se näkyy webbisivuna
 
-1. luo uusi branch nimeltä `gh-pages` komennolla: `git branch gh-pages`
-2. vaihda ko. branchiin komennolla `git checkout gh-pages`
-3. julkaise branch githubiin komennolla `git push origin gh-pages`
+1. luo uusi branch nimeltä `gh-pages` **päätteessä** komennolla: `git branch gh-pages`
+2. vaihda ko. branchiin **päätteessä** komennolla: `git checkout gh-pages`
+3. julkaise branch githubiin **päätteessä** komennolla: `git push origin gh-pages`
 4. 10 minuutin kuluessa sivut ovat näkyvissä osoitteessa: `kayttajatunnus.github.io/uusiprojekti/`
 
 
