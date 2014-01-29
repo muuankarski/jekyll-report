@@ -2,7 +2,8 @@ name: Analyysi- ja raportointiapplikaatio
 markdown: redcarpet
 redcarpet:
   extensions: ["tables"]
-pygments: true
+pygments: false
 lang: fi
 exclude: [cache,publish.sh,knitfiles.R]
-baseurl: /
+encoding: UTF-8
+baseurl: 
