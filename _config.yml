@@ -4,6 +4,6 @@ redcarpet:
   extensions: ["tables"]
 pygments: false
 lang: fi
-exclude: [cache,publish.sh,knitfiles.R]
+exclude: [cache,knitfiles.R]
 encoding: UTF-8
 baseurl: 
