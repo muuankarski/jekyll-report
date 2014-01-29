@@ -66,7 +66,7 @@ Uuden projektin perustaminen, analyysit ja julkaisu githubissa
 
 #### Tee julkaistuun prjektiin gh-pages haara (branch) jotta se näkyy webbisivuna
 
-1. luo uusi branch nimeltä `gh-pages` **päätteessä** komennolla: `git branch gh-pages`
+1. luo uusi branch nimeltä *gh-pages* **päätteessä** komennolla: `git branch gh-pages`
 2. vaihda ko. branchiin **päätteessä** komennolla: `git checkout gh-pages`
 3. julkaise branch githubiin **päätteessä** komennolla: `git push origin gh-pages`
 4. 10 minuutin kuluessa sivut ovat näkyvissä osoitteessa: `kayttajatunnus.github.io/uusiprojekti/`
