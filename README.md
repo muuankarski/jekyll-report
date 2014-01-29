@@ -51,7 +51,8 @@ Uuden projektin perustaminen, analyysit ja julkaisu githubissa
     1. `_config.yml`: lisää sivujen url `"https://kayttajatunnus.github.io/uusiprojekti"` kohtaan `baseurl: ` (kaksoispisteen jälkeen)
     2. `knitfiles.R`: lisää sivujen url `"https://kayttajatunnus.github.io/uusiprojekti"` kohtaan `base.url="/"`
     3. **Huomaa jättää `/` url:n perään `knitfiles.R`-tiedostossa**
-3. aja **R:ssä** komento `source("knitfiles.R")`  ja **päätteessä** komento: `jekyll build` ja sivusto on valmis verkkoon
+3. tuhoa kaikki .markdown tiedostot `_posts`-kansiosta
+4. aja **R:ssä** komento `source("knitfiles.R")`  ja **päätteessä** komento: `jekyll build` ja sivusto on valmis verkkoon
 
 #### Lisää uudet tiedostot ja muutokset paikallisesti git-repoon
 
