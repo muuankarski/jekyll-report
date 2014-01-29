@@ -34,9 +34,9 @@ Uuden projektin perustaminen, analyysit ja julkaisu githubissa
 4. valitse **git**
 5. kopio git-repon osoite URL-kenttään: `https://github.com/muuankarski/jekyll-report` ja annan projektille sopiva **nimi** ja osoita **kansio** jonne projekti perustetaan
 
-### Tee analyysit ja luo sivusto paikallisesti
+### Tee luo sivusto paikallisesti, tee analyysit ja päivitä sivustoa
 
-1. Avaa **pääte** ja aja komento 
+1. Avaa **pääte** ja aja alla oleva komento **päätteessä**
     1. windows: `jekyll serve --watch`
     2. linux/OS X: `jekyll serve --watch --baseurl ''`
 2. mene selaimella osoitteeseen `localhost:4000`
