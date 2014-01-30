@@ -7,6 +7,7 @@ Periaate on seuraava:
 
 1. sovellus analysoi aineiston halutulla tavalla [R-ympäristössä](http://www.r-project.org/) käyttäen [knitr](http://yihui.name/knitr/)-teknologiaa ja 
 2. tulostaa tulokset [jekyll](http://jekyllrb.com/)-pohjaiseen [bootstrap](http://getbootstrap.com/):llä muotoiltuun [staattiseen](http://fi.wikipedia.org/wiki/Verkkosivu#Staattiset_ja_dynaamiset_sivut) verkkosivustoon.
+3. staattinen verkkosivusto on mahdollista julkaista verkossa tai paikallisesti
 
 Pari linkkiä R:ään:
 
@@ -23,7 +24,7 @@ Prosessi etenee siis siten, että
 3. sovelluksen koodi on [git](http://git-scm.com/)-versionhallinnassa, mikä mahdollistaa kehityksen yhteistyössä ja sekä raportoinnin kätevän julkaisun verkossa.
 
 
-Demo: Uuden projektin perustaminen ja analyysit paikallisesti sekä raportoin julkaisu verkossa GitHubissa
+Demo: Uusi projekti
 ======================
 
 1. Kloonaa projektin pohja githubista
